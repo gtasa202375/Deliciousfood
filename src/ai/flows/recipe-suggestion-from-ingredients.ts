@@ -54,14 +54,23 @@ const recipeSuggestionFromIngredientsFlow = ai.defineFlow(
       throw new Error('Could not generate recipe');
     }
 
-    const {media} = await ai.generate({
-      model: 'googleai/imagen-4.0-fast-generate-001',
-      prompt: `A beautiful, professional photograph of ${recipe.recipeName}, plated exquisitely.`,
-    });
+    let imageUrl = '';
+    try {
+      const {media} = await ai.generate({
+        model: 'googleai/imagen-4.0-fast-generate-001',
+        prompt: `A beautiful, professional photograph of ${recipe.recipeName}, plated exquisitely.`,
+      });
+      imageUrl = media?.url ?? '';
+    } catch (error) {
+      console.error('Image generation failed, likely due to a billing issue. Using a placeholder.', error);
+      // Create a deterministic placeholder based on the recipe name
+      const seed = recipe.recipeName.split('').reduce((acc, char) => acc + char.charCodeAt(0), 0);
+      imageUrl = `https://picsum.photos/seed/${seed}/1280/720`;
+    }
 
     return {
       ...recipe,
-      imageUrl: media?.url ?? '',
+      imageUrl,
     };
   }
 );
