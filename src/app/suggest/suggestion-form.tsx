@@ -1,6 +1,6 @@
 "use client";
 
-import { useFormState } from 'react-dom';
+import { useActionState } from 'react';
 import { Loader2 } from 'lucide-react';
 import { recipeSuggestionFromIngredients, RecipeSuggestionFromIngredientsOutput } from '@/ai/flows/recipe-suggestion-from-ingredients';
 import { Button } from '@/components/ui/button';
@@ -42,14 +42,14 @@ async function getRecipeSuggestion(
 
 function SubmitButton() {
   // `useFormStatus` is not available yet in the installed Next.js version
-  // A simple loading state can be managed with `useFormState`
+  // A simple loading state can be managed with `useActionState`
   // For a better UX, a more complex state management would be needed.
   // For now, we will rely on the form state change to show results.
   return <Button type="submit" className="w-full">获取食谱推荐</Button>;
 }
 
 export function SuggestionForm() {
-  const [state, formAction] = useFormState(getRecipeSuggestion, initialState);
+  const [state, formAction] = useActionState(getRecipeSuggestion, initialState);
 
   return (
     <div>
