@@ -27,7 +27,7 @@ export default function RootLayout({
           <Header />
           <main className="flex-1">{children}</main>
           <footer className="py-8 text-center text-muted-foreground">
-            <p>美食佳肴 &copy; 2024</p>
+            <p>美食佳肴 &copy; 2025</p>
           </footer>
         </div>
         <Toaster />
