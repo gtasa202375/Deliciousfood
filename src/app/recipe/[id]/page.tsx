@@ -5,6 +5,7 @@ import { Clock, Users, Soup } from 'lucide-react';
 import { Badge } from '@/components/ui/badge';
 import { FavoriteButton } from '@/components/favorite-button';
 import { Separator } from '@/components/ui/separator';
+import { ShareButton } from '@/components/share-button';
 
 type RecipePageProps = {
   params: {
@@ -67,7 +68,10 @@ export default function RecipePage({ params }: RecipePageProps) {
               <span className="font-medium">份量: {recipe.servings} 人份</span>
             </div>
           </div>
-          <FavoriteButton recipeId={recipe.id} />
+          <div className="flex items-center">
+            <ShareButton recipeId={recipe.id} recipeTitle={recipe.title} />
+            <FavoriteButton recipeId={recipe.id} />
+          </div>
         </div>
         
         {recipe.tags && recipe.tags.length > 0 && (
