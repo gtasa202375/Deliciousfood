@@ -5,7 +5,7 @@ import { usePathname, useRouter, useSearchParams } from 'next/navigation';
 import { ChefHat, Menu, Search, X } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
-import { Sheet, SheetContent, SheetTrigger, SheetClose } from '@/components/ui/sheet';
+import { Sheet, SheetContent, SheetTrigger, SheetClose, SheetHeader, SheetTitle } from '@/components/ui/sheet';
 import { FormEvent, useState } from 'react';
 import { cn } from '@/lib/utils';
 
@@ -39,13 +39,15 @@ export function Header() {
               </Button>
             </SheetTrigger>
             <SheetContent side="left">
+              <SheetHeader>
+                  <SheetTitle>
+                    <Link href="/" className="flex items-center gap-2" onClick={() => setSheetOpen(false)}>
+                      <ChefHat className="h-6 w-6 text-primary" />
+                      <span className="font-bold font-headline text-lg">美食佳肴</span>
+                    </Link>
+                  </SheetTitle>
+              </SheetHeader>
               <div className="flex flex-col h-full">
-                <div className="border-b pb-4">
-                  <Link href="/" className="flex items-center gap-2" onClick={() => setSheetOpen(false)}>
-                    <ChefHat className="h-6 w-6 text-primary" />
-                    <span className="font-bold font-headline text-lg">美食佳肴</span>
-                  </Link>
-                </div>
                 <nav className="flex flex-col gap-4 mt-6">
                   {navLinks.map((link) => (
                     <Link
