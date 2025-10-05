@@ -1,3 +1,94 @@
 {
-  "placeholderImages": []
+  "placeholderImages": [
+    {
+      "id": "hero",
+      "description": "A beautifully plated meal on a rustic wooden table.",
+      "imageUrl": "https://images.unsplash.com/photo-1547573854-74d2a71d0826?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxmb29kJTIwdGFibGV8ZW58MHx8fHwxNzU5NTc3NzMxfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "food table"
+    },
+    {
+      "id": "recipe-1",
+      "description": "Braised pork belly in soy sauce.",
+      "imageUrl": "https://images.unsplash.com/photo-1623130320585-28986bf80859?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxicmFpc2VkJTIwcG9ya3xlbnwwfHx8fDE3NTk2NDI3OTh8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "braised pork"
+    },
+    {
+      "id": "recipe-2",
+      "description": "Scrambled eggs with fresh tomatoes.",
+      "imageUrl": "https://images.unsplash.com/photo-1563690449029-d6e1b8d6003d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxzY3JhbWJsZWQlMjBlZ2dzfGVufDB8fHx8MTc1OTU5NDQyNHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "scrambled eggs"
+    },
+    {
+      "id": "recipe-3",
+      "description": "Glazed cola chicken wings.",
+      "imageUrl": "https://images.unsplash.com/photo-1600555379765-f82335a7b1b0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxjaGlja2VuJTIwd2luZ3N8ZW58MHx8fHwxNzU5NTkxNDkyfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "chicken wings"
+    },
+    {
+      "id": "recipe-4",
+      "description": "A light and airy chiffon cake.",
+      "imageUrl": "https://images.unsplash.com/photo-1597334131807-b7031c30e2fa?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxjaGlmZm9uJTIwY2FrZXxlbnwwfHx8fDE3NTk2NDI3OTh8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "chiffon cake"
+    },
+    {
+      "id": "recipe-5",
+      "description": "Spicy mapo tofu dish.",
+      "imageUrl": "https://images.unsplash.com/photo-1745582763219-1a5259056ba3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxtYXBvJTIwdG9mdXxlbnwwfHx8fDE3NTk2NDI3OTh8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "mapo tofu"
+    },
+    {
+      "id": "recipe-6",
+      "description": "Kung pao chicken with peanuts.",
+      "imageUrl": "https://images.unsplash.com/photo-1643479732998-7135602737c4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxrdW5nJTIwcGFvfGVufDB8fHx8MTc1OTY0Mjc5OHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "kung pao"
+    },
+    {
+      "id": "recipe-7",
+      "description": "Classic sweet and sour pork.",
+      "imageUrl": "https://images.unsplash.com/photo-1609204250955-c4a90ad90937?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxzd2VldCUyMHNvdXJ8ZW58MHx8fHwxNzU5NjQyNzk4fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "sweet sour"
+    },
+    {
+      "id": "recipe-8",
+      "description": "A comforting bowl of wonton soup.",
+      "imageUrl": "https://images.unsplash.com/photo-1470324161839-ce2bb6fa6bc3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHx3b250b24lMjBzb3VwfGVufDB8fHx8MTc1OTY0Mjc5OHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "wonton soup"
+    },
+    {
+      "id": "recipe-9",
+      "description": "Fluffy chocolate chip cookies.",
+      "imageUrl": "https://images.unsplash.com/photo-1611945007935-925b09ddcf1b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxjaG9jb2xhdGUlMjBjb29raWVzfGVufDB8fHx8MTc1OTU5MTkxMXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "chocolate cookies"
+    },
+    {
+      "id": "recipe-10",
+      "description": "Homemade apple pie with a lattice crust.",
+      "imageUrl": "https://images.unsplash.com/photo-1568571780765-9276ac8b75a2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxhcHBsZSUyMHBpZXxlbnwwfHx8fDE3NTk1NjE5NzJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "apple pie"
+    },
+    {
+      "id": "category-1",
+      "description": "Assortment of home-cooked dishes.",
+      "imageUrl": "https://images.unsplash.com/photo-1627662166825-a860471632e4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxmYW1pbHklMjBkaW5uZXJ8ZW58MHx8fHwxNzU5NjQyNzk4fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "family dinner"
+    },
+    {
+      "id": "category-2",
+      "description": "A quick meal being prepared in a pan.",
+      "imageUrl": "https://images.unsplash.com/photo-1591745952765-071aa8677b2b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxwYW4lMjBmcnl8ZW58MHx8fHwxNzU5NjQyNzk4fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "pan fry"
+    },
+    {
+      "id": "category-3",
+      "description": "Baking ingredients and tools on a counter.",
+      "imageUrl": "https://images.unsplash.com/photo-1643316781323-13123dc14b0f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxiYWtpbmclMjBpbmdyZWRpZW50c3xlbnwwfHx8fDE3NTk2NDI3OTh8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "baking ingredients"
+    },
+    {
+      "id": "category-4",
+      "description": "A steaming bowl of soup.",
+      "imageUrl": "https://images.unsplash.com/photo-1612108438004-257c47560118?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHx2ZWdldGFibGUlMjBzb3VwfGVufDB8fHx8MTc1OTU5MTA3M3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "vegetable soup"
+    }
+  ]
 }
