@@ -1,13 +1,12 @@
 "use client";
 
 import { useActionState } from 'react';
-import { Download, Loader2 } from 'lucide-react';
+import { Loader2 } from 'lucide-react';
 import { recipeSuggestionFromIngredients, RecipeSuggestionFromIngredientsOutput } from '@/ai/flows/recipe-suggestion-from-ingredients';
 import { Button } from '@/components/ui/button';
 import { Textarea } from '@/components/ui/textarea';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Alert, AlertDescription, AlertTitle } from '@/components/ui/alert';
-import Image from 'next/image';
 
 type FormState = {
   data: RecipeSuggestionFromIngredientsOutput | null;
@@ -61,18 +60,6 @@ function SubmitButton({ pending }: { pending: boolean }) {
 export function SuggestionForm() {
   const [state, formAction, isPending] = useActionState(getRecipeSuggestion, initialState);
 
-  const handleDownload = () => {
-    if (state.data?.imageUrl) {
-      const link = document.createElement('a');
-      link.href = state.data.imageUrl;
-      link.download = `${state.data.recipeName}.png`;
-      document.body.appendChild(link);
-      link.click();
-      document.body.removeChild(link);
-    }
-  };
-
-
   return (
     <div>
       <form action={formAction} className="space-y-4">
@@ -104,23 +91,8 @@ export function SuggestionForm() {
 
       {state.data && !isPending && (
         <Card className="mt-8 overflow-hidden">
-          {state.data.imageUrl && (
-            <div className="relative aspect-video w-full">
-              <Image
-                src={state.data.imageUrl}
-                alt={state.data.recipeName}
-                fill
-                className="object-cover"
-              />
-            </div>
-          )}
-          <CardHeader className="flex flex-row items-start justify-between">
+          <CardHeader>
             <CardTitle className="font-headline text-2xl">{state.data.recipeName}</CardTitle>
-            {state.data.imageUrl && (
-              <Button variant="outline" size="icon" onClick={handleDownload} aria-label="下载图片">
-                <Download className="h-5 w-5" />
-              </Button>
-            )}
           </CardHeader>
           <CardContent className="space-y-6">
             <div>
